@@ -1,10 +1,9 @@
-
 const Engine = Matter.Engine;
 const World = Matter.World;
 const Bodies = Matter.Bodies;
 const Body = Matter.Body;
 
-var tree, boy, boyImg,stone,mango1,mango2,mango3;
+var tree,boy,boyImg,stone,mango1,mango2,mango3;
 
 function preload()
 {
@@ -26,6 +25,7 @@ function setup() {
 
 	tree = new Tree(700,600,50,60);
 
+	stone = new Stone(400,500,20,20);
 
 	Engine.run(engine);
   
@@ -37,6 +37,7 @@ function draw() {
   background(0);
 
   tree.display();
+  stone.display();
   
   drawSprites();
  

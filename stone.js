@@ -1,4 +1,4 @@
-class Base {
+class Stone {
     constructor(x, y, width, height) {
       var options = {
           isStatic:false,
@@ -17,3 +17,6 @@ class Base {
       image(this.image,0, 0, this.width, this.height);
     }
   };
+
+
+

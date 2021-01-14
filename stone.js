@@ -14,9 +14,6 @@ class Stone {
     }
     display(){
       imageMode(CENTER);
-      image(this.image,0, 0, this.width, this.height);
+      image(this.image,this.body.position.x,this.body.position.y,50,50);
     }
   };
-
-
-

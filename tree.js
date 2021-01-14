@@ -11,7 +11,6 @@ this.body = Bodies.rectangle(x, y, width, height, options);
 this.width = width;
 this.height = height;
 this.image = loadImage("Plucking mangoes/tree.png");
-this.scale = 3;
 World.add(world, this.body);
 
 }
@@ -21,7 +20,7 @@ display(){
     imageMode(CENTER);
     translate(this.body.position.x,this.body.position.y);
     rotate(this.body.angle);
-    image(this.image,0, 0, this.width, this.height);
+    image(this.image,0, 0, 300, 500);
     pop();
 }
 
